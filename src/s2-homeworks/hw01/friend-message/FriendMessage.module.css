@@ -1,0 +1,75 @@
+.friendMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.friendImageAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.friendImageAndText img {
+    height: 48px;
+    width: 48px;
+}
+
+.friendText {
+    background-color: #F5F7FB;
+    border-radius: 16px;
+    padding: 8px 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 13px;
+    position: relative;
+}
+
+.friendText:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -35px; /* Положение треугольника */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 35px solid #F5F7FB;
+    border-top: 25px solid transparent;
+}
+
+.friendName {
+    margin-bottom: 3px;
+    font-family: Montserrat,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #000000;
+}
+
+.friendMessageText {
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+    z-index: 1;
+    white-space: pre-wrap;  /* Сохраняет пробелы и переносы, позволяет перенос строк */
+    hyphens: auto;          /* Включает автоматические переносы по слогам */
+    word-wrap: break-word;
+}
+
+.friendTime {
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-left: 10px;
+}
