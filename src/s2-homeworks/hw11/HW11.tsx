@@ -3,7 +3,6 @@ import s2 from '../../s1-main/App.module.css'
 import { restoreState } from '../hw06/localStorage/localStorage'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import s from './HW11.module.css'
-import { log } from 'node:console'
 
 /*
  * 1 - передать значения в оба слайдера
